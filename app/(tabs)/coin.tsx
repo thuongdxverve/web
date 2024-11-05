@@ -38,8 +38,8 @@ const styles = StyleSheet.create({
         height: 37,
     },
     image_bell: {
-        width: 32,
-        height: 37,
+        width: 28,
+        height: 33,
         marginRight: 10
     },
 });
