@@ -5,6 +5,7 @@ import { TabBarIcon } from '@/components/navigation/TabBarIcon';
 import { Colors } from '@/constants/Colors';
 import { useColorScheme } from '@/hooks/useColorScheme';
 import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
+import {Image} from "react-native";
 
 
 export default function TabLayout() {
@@ -21,7 +22,7 @@ export default function TabLayout() {
             options={{
                 title: 'COIN',
                 tabBarIcon: ({ color, focused }) => (
-                    <FontAwesome5 name="coins" size={28} color={color} />
+                    <Image style={{width: 40, height: 40}} color={color} source={require('@/assets/images/icon_coin.png')}/>
                 ),
             }}
         />
