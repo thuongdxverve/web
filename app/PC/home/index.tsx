@@ -1,10 +1,10 @@
 import {View, StyleSheet} from "react-native";
 import {SceneMap, TabBar, TabView} from "react-native-tab-view";
 import React from "react";
-import SearchPC from "./Search";
-import GiveItemPC from "./GiveItem";
-import HeaderPC from "../Layouts/header";
-import GiveCoin from "@/components/GiveCoin";
+import SearchPC from "./search";
+import GiveItemPC from "./give-item";
+import HeaderPC from "@/app/PC/layouts/header";
+import GiveCoin from "../../../components/give-coin";
 
 const FirstRoute = () => (
   <View style={{ flex: 1, backgroundColor: '#ff4081' }} />

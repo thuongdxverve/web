@@ -8,7 +8,7 @@ import Ionicons from '@expo/vector-icons/Ionicons';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 import {AntDesign} from "@expo/vector-icons";
-import GiveCoin from "@/components/GiveCoin";
+import GiveCoin from "../../components/give-coin";
 
 function LogoTitle() {
     return (
