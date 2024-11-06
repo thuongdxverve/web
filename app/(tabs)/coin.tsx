@@ -1,16 +1,22 @@
-import { Stack } from 'expo-router';
-import { Button, Text, Image, StyleSheet } from 'react-native';
-import { useState } from 'react';
+import {Stack} from 'expo-router';
+import {Button, Text, View, Image, StyleSheet, ScrollView, Platform} from 'react-native';
+import {useState} from 'react';
 
 function LogoTitle() {
     return (
-        <Image style={styles.image_logo} source={require('@/assets/images/logo.png')} />
+        <Image style={styles.image_logo} source={require('@/assets/images/common/logo.png')}/>
     );
 }
 
-function ImageBell() {
+function BellImage() {
     return (
-        <Image style={styles.image_bell} source={require('@/assets/images/bell-icon.png')} />
+        <Image style={styles.image_bell} source={require('@/assets/images/common/bell-icon.png')}/>
+    );
+}
+
+function AvatarImage() {
+    return (
+        <Image style={styles.image_avatar} source={require('@/assets/images/common/avatar.png')}/>
     );
 }
 
@@ -23,11 +29,21 @@ export default function Home() {
                 options={{
                     headerTitle: props => <LogoTitle {...props} />,
                     headerTitleAlign: "center",
-                    headerRight: props => <ImageBell {...props} />,
+                    headerRight: props => <BellImage {...props} />,
+                    headerLeft: props => <AvatarImage {...props} />,
 
                 }}
             />
-            <Text>Count: {count}</Text>
+
+            <ScrollView style={{backgroundColor: 'white', paddingTop: 10}}>
+                <View style={{  flexDirection: "row", flexWrap: "wrap", alignItems:'center' }}>
+                    <Text style={{marginRight: 5, fontSize: 20}}>コイン</Text>
+                    <Text style={{marginRight: 5, fontSize: 16,color: 'rgb(12 12 162)'}}>コインの種類について</Text>
+                    <Image style={{ width: 23,height: 23,}} source={require('@/assets/images/common/question_mark.png')}/>
+                    <Image style={{ width: 25, height: 25, position: 'absolute', right: 10}} source={require('@/assets/images/common/search_icon.png')}/>
+                </View>
+            </ScrollView>
+
         </>
     );
 }
@@ -38,8 +54,15 @@ const styles = StyleSheet.create({
         height: 37,
     },
     image_bell: {
-        width: 28,
-        height: 33,
+        width: 30,
+        height: 30,
         marginRight: 10
     },
+    image_avatar: {
+        width: 40,
+        height: 40,
+        marginLeft: 10,
+        borderRadius: 10,
+    },
+
 });
