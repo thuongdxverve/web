@@ -3,7 +3,7 @@ import {SceneMap, TabBar, TabView} from "react-native-tab-view";
 import React from "react";
 import SearchPC from "./search";
 import GiveItemPC from "./give-item";
-import HeaderPC from "@/app/PC/layouts/header";
+import HeaderPC from "@/app/pc/layouts/header";
 import GiveCoin from "../../../components/give-coin";
 
 const FirstRoute = () => (
