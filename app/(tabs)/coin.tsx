@@ -123,6 +123,7 @@ export default function Home() {
 
                 }}
             />
+          <ScrollView>
             <ThemedView style={styles.sectionInfo}>
               <ThemedView style={styles.sectionSearch}>
                 <ThemedView style={styles.yourMoney}>
@@ -134,7 +135,6 @@ export default function Home() {
               </ThemedView>
             </ThemedView>
 
-            <ScrollView>
               <ThemedView style={styles.sectionTab}>
                 <TabView
                   navigationState={{ index, routes }}
@@ -147,9 +147,8 @@ export default function Home() {
                   }}
                 />
               </ThemedView>
-            </ScrollView>
-
-            <GiveCoin isMobile={true}/>
+          </ScrollView>
+          <GiveCoin isMobile={true}/>
         </>
     );
 }
