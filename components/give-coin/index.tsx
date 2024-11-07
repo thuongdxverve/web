@@ -1,6 +1,6 @@
 import {Image, Text, View} from "react-native";
 import React from "react";
-import styles from './GiveCoinStyles';
+import styles from './give-coin-styles';
 
 interface GiveCoinProps {
   isMobile: boolean;

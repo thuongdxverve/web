@@ -3,9 +3,8 @@ import coinHistoryMock from "@/mocks/coinHistoryMock";
 import {ThemedView} from "@/components/ThemedView";
 import Ionicons from "@expo/vector-icons/Ionicons";
 import {AntDesign} from "@expo/vector-icons";
-import GiveCoin from "@/components/give-coin";
 import React from "react";
-import styles from './CoinStyles';
+import styles from './coin-styles';
 
 export default function Coin() {
 
