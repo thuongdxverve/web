@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {View, Dimensions} from 'react-native';
+import {View, Dimensions, Text} from 'react-native';
 import {TabView, SceneMap, TabBar} from 'react-native-tab-view';
 import Coin from "@/components/coin";
 import GiveItemPC from "@/app/pc/home/give-item";
@@ -26,43 +26,43 @@ const TabViewCoin: React.FC<TabViewCoinProps> = ({ isMobile }) => {
 
   const SecondRoute = () => (
     <View style={{ padding: 16 }}>
-      Division
+      <Text>Division</Text>
     </View>
   );
 
   const ThirdRoute = () => (
     <View style={{ padding: 16 }}>
-      ThirdRoute
+      <Text>EightRoute</Text>
     </View>
   );
 
   const FourRoute = () => (
     <View style={{ padding: 16 }}>
-      FourRoute
+      <Text>EightRoute</Text>
     </View>
   );
 
   const FiveRoute = () => (
     <View style={{ padding: 16 }}>
-      FiveRoute
+      <Text>EightRoute</Text>
     </View>
   );
 
   const SixRoute = () => (
     <View style={{ padding: 16 }}>
-      SixRoute
+      <Text>EightRoute</Text>
     </View>
   );
 
   const SevenRoute = () => (
     <View style={{ padding: 16 }}>
-      SevenRoute
+      <Text>EightRoute</Text>
     </View>
   );
 
   const EightRoute = () => (
     <View style={{ padding: 16 }}>
-      EightRoute
+      <Text>EightRoute</Text>
     </View>
   );
 
@@ -84,6 +84,7 @@ const TabViewCoin: React.FC<TabViewCoinProps> = ({ isMobile }) => {
       style={{
         backgroundColor: 'white',
         marginLeft: !isMobile ? '75px' : '0',
+        boxShadow: 0,
       }}
       activeColor="blue"
       inactiveColor="gray"
