@@ -131,7 +131,6 @@ export default function Home() {
                   <FontAwesome name="question-circle-o" size={20} color="rgba(34, 49, 186, 1)" />
                 </ThemedView>
                 <Ionicons name="search" size={32} color="rgba(34, 49, 186, 1)" />
-
               </ThemedView>
             </ThemedView>
 
@@ -179,7 +178,7 @@ const styles = StyleSheet.create({
   sectionSearch: {
     padding: 10,
     width: '100%',
-    display: 'flex',
+    flexDirection: 'row',
     justifyContent: 'space-between',
     marginTop: 15,
   },
@@ -196,7 +195,6 @@ const styles = StyleSheet.create({
   },
   yourMoney: {
     flexDirection: 'row',
-    justifyContent: 'space-between',
     alignItems: 'center',
   },
   titleCoin: {
