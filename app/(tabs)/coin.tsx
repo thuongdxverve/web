@@ -1,6 +1,8 @@
 import {Stack} from 'expo-router';
 import {Button, Text, View, Image, StyleSheet, ScrollView, Platform} from 'react-native';
 import {useState} from 'react';
+import {ThemedView} from "@/components/ThemedView";
+import {FontAwesome, Ionicons} from "@expo/vector-icons";
 
 function LogoTitle() {
     return (
@@ -35,10 +37,10 @@ export default function Home() {
                 }}
             />
 
-            <ScrollView style={{backgroundColor: 'white', paddingTop: 10}}>
+            <ScrollView style={{backgroundColor: 'white', paddingTop: 15}}>
                 <View style={{  flexDirection: "row", flexWrap: "wrap", alignItems:'center' }}>
-                    <Text style={{marginRight: 5, fontSize: 20}}>コイン</Text>
-                    <Text style={{marginRight: 5, fontSize: 16,color: 'rgb(12 12 162)'}}>コインの種類について</Text>
+                    <Text style={{marginRight: 5, fontSize: 20, fontWeight: 'bold'}}>コイン</Text>
+                    <Text style={{marginRight: 5, fontSize: 16,fontWeight: 'bold', color: 'rgb(12 12 162)'}}>コインの種類について</Text>
                     <Image style={{ width: 23,height: 23,}} source={require('@/assets/images/common/question_mark.png')}/>
                     <Image style={{ width: 25, height: 25, position: 'absolute', right: 10}} source={require('@/assets/images/common/search_icon.png')}/>
                 </View>
