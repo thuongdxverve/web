@@ -1,5 +1,5 @@
 import { Stack } from 'expo-router';
-import {Text, Image, StyleSheet} from 'react-native';
+import {Text, Image, StyleSheet, ScrollView} from 'react-native';
 import React from 'react';
 import {ThemedView} from "@/components/ThemedView";
 import Ionicons from '@expo/vector-icons/Ionicons';
@@ -41,23 +41,25 @@ export default function Home() {
 
                 }}
             />
-          <ThemedView style={styles.sectionInfo}>
-            <Text style={styles.sectionSearch}>
-              <ThemedView style={styles.yourMoney}>
-                <Text style={styles.titleCoin}>コイン</Text>
-                <Text style={styles.titleTypeCoin}>コインの種類について</Text>
-                <FontAwesome name="question-circle-o" size={20} color="rgba(34, 49, 186, 1)" />
+            <ThemedView style={styles.sectionInfo}>
+              <Text style={styles.sectionSearch}>
+                <ThemedView style={styles.yourMoney}>
+                  <Text style={styles.titleCoin}>コイン</Text>
+                  <Text style={styles.titleTypeCoin}>コインの種類について</Text>
+                  <FontAwesome name="question-circle-o" size={20} color="rgba(34, 49, 186, 1)" />
+                </ThemedView>
+                <Ionicons name="search" size={32} color="rgba(34, 49, 186, 1)" />
+
+              </Text>
+            </ThemedView>
+
+            <ScrollView>
+              <ThemedView style={styles.sectionTab}>
+                <TabViewCoin isMobile={true} />
               </ThemedView>
-              <Ionicons name="search" size={32} color="rgba(34, 49, 186, 1)" />
+            </ScrollView>
 
-            </Text>
-          </ThemedView>
-
-          <ThemedView style={styles.sectionTab}>
-            <TabViewCoin isMobile={true} />
-          </ThemedView>
-
-          <GiveCoin isMobile={true}/>
+            <GiveCoin isMobile={true}/>
         </>
     );
 }

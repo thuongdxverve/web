@@ -32,9 +32,6 @@ const responsiveBackground = `
 body {
   background-color: #fff;
 }
-.r-overflow-1udh08x {
-  overflow-y: auto !important;
-}
 @media (prefers-color-scheme: dark) {
   body {
     background-color: #000;
