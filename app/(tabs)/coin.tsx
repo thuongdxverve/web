@@ -124,7 +124,7 @@ export default function Home() {
                 }}
             />
             <ThemedView style={styles.sectionInfo}>
-              <Text style={styles.sectionSearch}>
+              <ThemedView style={styles.sectionSearch}>
                 <ThemedView style={styles.yourMoney}>
                   <Text style={styles.titleCoin}>コイン</Text>
                   <Text style={styles.titleTypeCoin}>コインの種類について</Text>
@@ -132,7 +132,7 @@ export default function Home() {
                 </ThemedView>
                 <Ionicons name="search" size={32} color="rgba(34, 49, 186, 1)" />
 
-              </Text>
+              </ThemedView>
             </ThemedView>
 
             <ScrollView>

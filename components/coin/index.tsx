@@ -17,7 +17,7 @@ export default function Coin() {
           <ThemedView style={{ marginBottom: 15 }}>
             <ThemedView style={styles.sectionGive}>
               <Text style={styles.titleRespected}>BE RESPECTEDコイン</Text>
-              <View style={styles.sectionInfoTitle}>
+              <ThemedView style={styles.sectionInfoTitle}>
                 <Text style={styles.titleHeadGive}>
                   {item.sender_name.length > 20 ? item.sender_name.substring(0, 13) + '...' : item.sender_name}
                 </Text>
@@ -28,7 +28,7 @@ export default function Coin() {
                 <Text style={styles.titleHeadGive}>
                   {item.receiver_name.length > 20 ? item.receiver_name.substring(0, 13) + '...' : item.receiver_name}
                 </Text>
-              </View>
+              </ThemedView>
 
               <ThemedView style={styles.avatarGive}>
                 <Image
