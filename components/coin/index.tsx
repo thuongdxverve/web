@@ -1,4 +1,4 @@
-import {FlatList, Image, Text, View} from "react-native";
+import {FlatList, Image, ScrollView, Text, View} from "react-native";
 import coinHistoryMock from "@/mocks/coinHistoryMock";
 import {ThemedView} from "@/components/ThemedView";
 import Ionicons from "@expo/vector-icons/Ionicons";
@@ -9,7 +9,7 @@ import styles from './coin-styles';
 export default function Coin() {
 
   return (
-      <>
+      <ScrollView >
         {
           coinHistoryMock.map((item, index)=> (
               <ThemedView key={item.id}  style={styles.overGive}>
@@ -75,7 +75,7 @@ export default function Coin() {
               </ThemedView>
           ))
         }
-      </>
+      </ScrollView>
 
   );
 }

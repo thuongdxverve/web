@@ -125,7 +125,6 @@ export default function CoinListScreen() {
 
                 }}
             />
-          <ScrollView>
             <ThemedView style={styles.sectionInfo}>
               <ThemedView style={styles.sectionSearch}>
                 <ThemedView style={styles.yourMoney}>
@@ -145,10 +144,8 @@ export default function CoinListScreen() {
               renderTabBar={renderTabBar}
               initialLayout={{
                 width: layout.width,
-                height: 100,
               }}
             />
-          </ScrollView>
           <SendCoinButton isMobile={true}/>
         </>
     );
