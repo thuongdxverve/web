@@ -28,7 +28,7 @@ function UserLogo() {
 }
 
 
-export default function Home() {
+export default function CoinListScreen() {
   const [index, setIndex] = React.useState(0);
   const [routes] = React.useState([
     { key: '1', title: 'すべて' },
