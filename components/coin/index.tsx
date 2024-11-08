@@ -9,7 +9,7 @@ import styles from './coin-styles';
 export default function Coin() {
 
   return (
-      <ThemedView>
+      <>
         {
           coinHistoryMock.map((item, index)=> (
               <ThemedView key={item.id}  style={styles.overGive}>
@@ -75,7 +75,7 @@ export default function Coin() {
               </ThemedView>
           ))
         }
-      </ThemedView>
+      </>
 
   );
 }
