@@ -5,7 +5,7 @@ import {ThemedView} from "@/components/ThemedView";
 import Ionicons from '@expo/vector-icons/Ionicons';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
-import GiveCoin from "@/components/send-coin-button";
+import SendCoinButton from "@/components/send-coin-button";
 import {SceneMap, TabBar, TabView} from "react-native-tab-view";
 import Coin from "@/components/coin";
 
@@ -148,7 +148,7 @@ export default function CoinListScreen() {
                 />
               </ThemedView>
           </ScrollView>
-          <GiveCoin isMobile={true}/>
+          <SendCoinButton isMobile={true}/>
         </>
     );
 }

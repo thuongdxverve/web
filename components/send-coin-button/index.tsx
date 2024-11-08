@@ -2,11 +2,11 @@ import {Image, Text, View} from "react-native";
 import React from "react";
 import styles from './send-coin-button-styles';
 
-interface GiveCoinProps {
+interface SendCoinButtonProps {
   isMobile: boolean;
 }
 
-const GiveCoin: React.FC<GiveCoinProps> = ({ isMobile }) => {
+const SendCoinButton: React.FC<SendCoinButtonProps> = ({ isMobile }) => {
     return (
             <View style={isMobile ? styles.sectionSP : styles.sectionPC}>
                 <View style={styles.sectionImage}>
@@ -27,4 +27,4 @@ const GiveCoin: React.FC<GiveCoinProps> = ({ isMobile }) => {
     );
 }
 
-export default GiveCoin;
+export default SendCoinButton;
