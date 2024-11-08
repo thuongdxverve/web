@@ -23,7 +23,7 @@ export default function Coin() {
                 </Text>
                 <Image
                   style={styles.arrow}
-                  source={require('@/assets/images/flowbite.png')}
+                  source={require('@/assets/images/coin/flowbite.png')}
                 />
                 <Text style={styles.titleHeadGive}>
                   {item.receiver_name.length > 20 ? item.receiver_name.substring(0, 13) + '...' : item.receiver_name}
@@ -37,12 +37,8 @@ export default function Coin() {
                 />
                 <ThemedView>
                   <Image
-                    style={styles.avatarCoin}
-                    source={require('@/assets/images/coin.png')}
-                  />
-                  <Image
-                    style={styles.avatarHand}
-                    source={require('@/assets/images//hand.png')}
+                    style={styles.coinTypeImage}
+                    source={require('@/assets/images/coin/coin-type-image.png')}
                   />
                 </ThemedView>
                 <Image

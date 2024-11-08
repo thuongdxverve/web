@@ -94,13 +94,9 @@ export default StyleSheet.create({
         fontSize: 12,
         fontWeight: 400,
     },
-    avatarCoin: {
-        width: 48,
-        height: 48,
-    },
-    avatarHand: {
-        width: 47,
-        height: 20,
+    coinTypeImage: {
+        width: 105,
+        height: 105,
     },
     avatarUser: {
         width: 105,

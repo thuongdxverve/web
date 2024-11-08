@@ -5,25 +5,25 @@ import {ThemedView} from "@/components/ThemedView";
 import Ionicons from '@expo/vector-icons/Ionicons';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
-import GiveCoin from "@/components/give-coin";
+import GiveCoin from "@/components/send-coin-button";
 import {SceneMap, TabBar, TabView} from "react-native-tab-view";
 import Coin from "@/components/coin";
 
 function LogoTitle() {
     return (
-        <Image style={styles.image_logo} source={require('@/assets/images/logo.png')} />
+        <Image style={styles.image_logo} source={require('@/assets/images/common/logo.png')} />
     );
 }
 
-function ImageBell() {
+function BellImage() {
     return (
       <MaterialIcons name="notifications-none" size={35} color="rgba(15, 16, 60, 1)" />
     );
 }
 
-function UserLogo() {
+function LoginAvatar() {
   return (
-    <Image style={styles.image_user} source={require('@/assets/images/userLogo.png')} />
+    <Image style={styles.image_user} source={require('@/assets/images/common/login-avatar.png')} />
   );
 }
 
@@ -117,8 +117,8 @@ export default function CoinListScreen() {
                 options={{
                     headerTitle: props => <LogoTitle />,
                     headerTitleAlign: "center",
-                    headerRight: props => <ImageBell />,
-                    headerLeft: props => <UserLogo />,
+                    headerRight: props => <BellImage />,
+                    headerLeft: props => <LoginAvatar />,
                     headerShadowVisible: false,
 
                 }}

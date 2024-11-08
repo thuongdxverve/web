@@ -1,6 +1,6 @@
 import {Image, Text, View} from "react-native";
 import React from "react";
-import styles from './give-coin-styles';
+import styles from './send-coin-button-styles';
 
 interface GiveCoinProps {
   isMobile: boolean;
@@ -12,7 +12,7 @@ const GiveCoin: React.FC<GiveCoinProps> = ({ isMobile }) => {
                 <View style={styles.sectionImage}>
                     <Image
                         style={{ width: 24, height: 24, margin: 'auto' }}
-                        source={require('@/assets/images/iconC.png')}
+                        source={require('@/assets/images/coin/iconC.png')}
                     />
                 </View>
                 <View style={styles.sectionTitle}>
